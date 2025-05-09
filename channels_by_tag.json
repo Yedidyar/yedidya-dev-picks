@@ -185,7 +185,8 @@
       "TheCodingTrain",
       "CodingTech",
       "codebasics",
-      "TechGym"
+      "TechGym",
+      "SebastianLague",
     ]
   },
   "podcasts": {
@@ -223,7 +224,8 @@
       "NoBoilerplate",
       "sithdev8206",
       "pullrequest1566",
-      "MollyRocket"
+      "MollyRocket",
+      "SebastianLague",
     ]
   },
   "computer_science": {
@@ -243,7 +245,8 @@
       "SpanningTree",
       "hackerdashery",
       "CodeAesthetic",
-      "gkcs"
+      "gkcs",
+      "SebastianLague",
     ]
   },
   "security": {
