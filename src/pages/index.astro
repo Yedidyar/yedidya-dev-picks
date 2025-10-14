@@ -1,144 +1,59 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import { loadChannels } from '../utils/channels';
 import CategorySection from '../components/CategorySection.astro';
 
 const categories = loadChannels();
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/yedidya-dev-picks/favicon.svg"
-    />
-    <meta
-      name="generator"
-      content={Astro.generator}
-    />
-    <title>Yedidya's Dev Picks</title>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Yedidya's Dev Picks</h1>
-          <p class="subtitle">
-            Your curated collection of educational YouTube channels for
-            developers
-          </p>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="number"
-              >{
-                new Set(
-                  categories.flatMap((cat) =>
-                    cat.subcategories.flatMap((sub) =>
-                      sub.channels.map((ch) => ch.url)
-                    )
+<Layout title="Yedidya's Dev Picks">
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Yedidya's Dev Picks</h1>
+        <p class="subtitle">
+          Your curated collection of educational YouTube channels for
+          developers
+        </p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="number"
+            >{
+              new Set(
+                categories.flatMap((cat) =>
+                  cat.subcategories.flatMap((sub) =>
+                    sub.channels.map((ch) => ch.url)
                   )
-                ).size
-              }</span
-            >
-            <span class="label">Channels</span>
-          </div>
-          <div class="stat">
-            <span class="number">{categories.length}</span>
-            <span class="label">Categories</span>
-          </div>
+                )
+              ).size
+            }</span
+          >
+          <span class="label">Channels</span>
+        </div>
+        <div class="stat">
+          <span class="number">{categories.length}</span>
+          <span class="label">Categories</span>
         </div>
       </div>
-      <div class="hero-wave"></div>
-    </header>
+    </div>
+    <div class="hero-wave"></div>
+  </header>
 
-    <main class="container">
-      <div class="categories-grid">
-        {categories.map((category) => <CategorySection category={category} />)}
-      </div>
-    </main>
+  <main class="container">
+    <div class="categories-grid">
+      {categories.map((category) => <CategorySection category={category} />)}
+    </div>
+  </main>
 
-    <footer>
-      <div class="container">
-        <p>Made with ❤️ for developers</p>
-      </div>
-    </footer>
-  </body>
-</html>
+  <footer>
+    <div class="container">
+      <p>Made with ❤️ for developers</p>
+    </div>
+  </footer>
+</Layout>
 
 <style>
-  :root {
-    --primary: #7c3aed;
-    --primary-dark: #6d28d9;
-    --primary-light: #a78bfa;
-    --accent: #f59e0b;
-    --accent-dark: #d97706;
-    --surface-1: #ffffff;
-    --surface-2: #f8fafc;
-    --surface-3: #f1f5f9;
-    --text-1: #0f172a;
-    --text-2: #475569;
-    --text-3: #94a3b8;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --primary: #8b5cf6;
-      --primary-dark: #7c3aed;
-      --primary-light: #a78bfa;
-      --accent: #f59e0b;
-      --accent-dark: #d97706;
-      --surface-1: #0f172a;
-      --surface-2: #1e293b;
-      --surface-3: #334155;
-      --text-1: #f8fafc;
-      --text-2: #e2e8f0;
-      --text-3: #94a3b8;
-    }
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family:
-      'Inter',
-      system-ui,
-      -apple-system,
-      sans-serif;
-    line-height: 1.5;
-    background: var(--surface-1);
-    color: var(--text-1);
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
   .hero {
     background: linear-gradient(
       135deg,
