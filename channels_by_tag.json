@@ -1,4 +1,31 @@
 {
+  "featured": {
+    "title": "Featured",
+    "channels": [
+      "Fireship",
+      "ThePrimeTimeagen",
+      "CoreDumpped",
+      "ByteMonk",
+      "ByteByteGo",
+      "FrontendMasters",
+      "3blue1brown",
+      "mattpocockuk",
+      "BackendRebase",
+      "awesome-coding",
+      "DevOpsToolkit",
+      "YCRootAccess",
+      "betterstack",
+      "CodingWithLewis",
+      "t3dotgg",
+      "nodetlv",
+      "devtoolsfm",
+      "kevinfaang",
+      "Veritasium",
+      "Kotlin",
+      "Reversim-summit",
+      "KaiLentit"
+    ]
+  },
   "frontend": {
     "title": "Web Development",
     "channels": [

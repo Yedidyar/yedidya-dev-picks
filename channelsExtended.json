@@ -4,7 +4,7 @@
     "link": "https://www.youtube.com/@SebastianLague",
     "title": "SebastianLague",
     "description": "Sebastian Lague explores complex programming and simulation topics—like physics, AI, and procedural generation—through visually rich, creative coding projects.",
-    "avatar_thumbnail":"/yedidya-dev-picks/logos/SebastianLague.jpeg"
+    "avatar_thumbnail": "/yedidya-dev-picks/logos/SebastianLague.jpeg"
   },
   "TechGym": {
     "full_name": "TechGym",
@@ -167,7 +167,6 @@
     "description": "Fast technical videos.\n\n\nIf you like sci-fi, check out my hopepunk podcast, Lost Terminal, at https://www.lostterminal.com\nIf you like urban fantasy, I produce a wonderful podcast called Modem Prometheus: https://www.modemprometheus.com\n\n",
     "avatar_thumbnail": "/yedidya-dev-picks/logos/NoBoilerplate.jpeg"
   },
-
   "basarat": {
     "full_name": "basarat",
     "link": "https://www.youtube.com/@basarat",
@@ -1453,7 +1452,7 @@
     "full_name": "NDC",
     "link": "https://www.youtube.com/@NDC",
     "title": "NDC Conferences",
-    "description": "NDC Conferences aims to find the greatest minds and leaders in the field of software development, striving to make the best and most updated knowledge available to developers everywhere. \n\nJoin these innovative speakers on our YouTube channel and at our year-round conferences in Oslo, London, Porto, Copenhagen and Sydney!\n\nWe hope to see you in person at our live events: \nhttps://ndcoslo.com/  \nhttps://ndclondon.com/\nhttps://ndcporto.com/ \nhttps://cphdevfest.com/ \nhttps://ndcsydney.com/ \n\n",
+    "description": "NDC Conferences aims to find the greatest minds and leaders in the field of software development, striving to make the best and most updated knowledge available to developers everywhere. \n\nJoin these innovative speakers on our YouTube channel and at our year-round conferences in Oslo, London, Porto, Copenhagen and Sydney!\n\nWe hope to see you in person at our live events:\nhttps://ndcoslo.com/ \nhttps://ndclondon.com/\nhttps://ndcporto.com/ \nhttps://cphdevfest.com/ \nhttps://ndcsydney.com/ \n\n",
     "avatar_thumbnail": "/yedidya-dev-picks/logos/NDC.jpeg"
   },
   "StrangeLoopConf": {
@@ -1560,5 +1559,33 @@
     "title": "devtools-fm",
     "description": "Hi, we're Andrew and Justin, two developers passionate about developer tooling. We started devtools.fm to explore this passion, to meet interesting people in the field, and to share our conversations with the world. ",
     "avatar_thumbnail": "/yedidya-dev-picks/logos/devtoolsfm.jpeg"
+  },
+  "YCRootAccess": {
+    "full_name": "YCRootAccess",
+    "link": "https://www.youtube.com/@YCRootAccess",
+    "title": "YC Root Access",
+    "description": "Welcome to YC Root Access, YC clips on startup life, founder interviews, live events, and other odds and ends about YC startups. Same great content, but a bit more off-the-record.",
+    "avatar_thumbnail": "/yedidya-dev-picks/logos/YCRootAccess.jpeg"
+  },
+  "BackendRebase": {
+    "full_name": "BackendRebase",
+    "link": "https://www.youtube.com/@BackendRebase",
+    "title": "Backend:Rebase",
+    "description": "",
+    "avatar_thumbnail": "/yedidya-dev-picks/logos/BackendRebase.jpeg"
+  },
+  "KaiLentit": {
+    "full_name": "KaiLentit",
+    "link": "https://www.youtube.com/@KaiLentit",
+    "title": "Kai Lentit",
+    "description": "",
+    "avatar_thumbnail": "/yedidya-dev-picks/logos/KaiLentit.jpeg"
+  },
+  "Veritasium": {
+    "full_name": "Veritasium",
+    "link": "https://www.youtube.com/@Veritasium",
+    "title": "Veritasium",
+    "description": "An element of truth - videos about science, education, and anything else we find interesting.",
+    "avatar_thumbnail": "/yedidya-dev-picks/logos/Veritasium.jpeg"
   }
 }

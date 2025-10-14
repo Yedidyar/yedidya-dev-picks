@@ -51,15 +51,13 @@ const categories = loadChannels();
           <div class="stat">
             <span class="number"
               >{
-                categories.reduce(
-                  (acc, cat) =>
-                    acc +
-                    cat.subcategories.reduce(
-                      (acc, sub) => acc + sub.channels.length,
-                      0
-                    ),
-                  0
-                )
+                new Set(
+                  categories.flatMap((cat) =>
+                    cat.subcategories.flatMap((sub) =>
+                      sub.channels.map((ch) => ch.url)
+                    )
+                  )
+                ).size
               }</span
             >
             <span class="label">Channels</span>
